@@ -51,6 +51,7 @@ module.exports = function (grunt) {
     "concurrent:copy_static",
   ]);
 
-  grunt.registerTask("build_server", ["shell:buildServer"]);
+  grunt.registerTask("build", ["vite:build"]);
   grunt.registerTask("build_client", ["shell:buildClient"]);
 };
+
